@@ -27,6 +27,22 @@ QuickHire is a full-stack **enterprise job marketplace system** designed for:
 This repository focuses on the **backend system architecture design** rather than just UI or frontend implementation.
 
 ---
+## 🌐 Live Demo
+
+Experience the live system design documentation here:
+
+🔗 ![Live](https://humayun1318.github.io/QuickHire_ERP_Architect_Doc/)
+
+💡 This hosted version showcases the complete Enterprise ERP Architecture of QuickHire including:
+- System Design
+- ERD Visualization
+- Module Breakdown
+- API Structure
+- Deployment Roadmap
+
+> ⚠️ Note: This is a frontend documentation UI (not backend API).
+
+---
 
 ## 🧠 Key Features
 
