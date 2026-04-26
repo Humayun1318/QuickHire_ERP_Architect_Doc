@@ -626,7 +626,7 @@
   </div>
 
   <h3>JWT Dual Token Strategy</h3>
-  <p>তোমার existing JWT implementation কে enterprise standard এ upgrade করতে <strong>Access Token + Refresh Token</strong> dual strategy ব্যবহার করতে হবে।</p>
+  <p>existing JWT implementation কে enterprise standard এ upgrade করতে <strong>Access Token + Refresh Token</strong> dual strategy ব্যবহার করতে হবে।</p>
 
   <div class="flow-steps">
     <div class="flow-step"><div class="flow-step-content"><strong>Login Request</strong><p>User credentials Zod দিয়ে validate, Passport Local Strategy দিয়ে authenticate</p></div></div>
@@ -722,7 +722,7 @@ router.delete(<span class="string">'/users/:id'</span>, authenticate, authorize(
   <div class="flow-steps">
     <div class="flow-step"><div class="flow-step-content"><strong>Initiate Payment</strong><p>User plan select করে → POST /payments/initiate → Server SSL Commerz API call করে session তৈরি করে। MongoDB-তে pending payment record তৈরি হয়। SSL Commerz payment URL return করে।</p></div></div>
     <div class="flow-step"><div class="flow-step-content"><strong>User Pays</strong><p>User SSL Commerz gateway-এ redirect হয়। bKash/Card/Nagad দিয়ে payment করে।</p></div></div>
-    <div class="flow-step"><div class="flow-step-content"><strong>IPN (Instant Payment Notification)</strong><p>SSL Commerz তোমার /payments/ipn endpoint-এ POST করবে। তুমি তখন transaction validate করবে SSL validation API দিয়ে। Payment status update করবে DB-তে।</p></div></div>
+    <div class="flow-step"><div class="flow-step-content"><strong>IPN (Instant Payment Notification)</strong><p>SSL Commerz /payments/ipn endpoint-এ POST করবে। তখন transaction validate করবে SSL validation API দিয়ে। Payment status update করবে DB-তে।</p></div></div>
     <div class="flow-step"><div class="flow-step-content"><strong>Success / Fail Redirect</strong><p>User success/fail page-এ redirect হবে। /payments/success এবং /payments/fail handler করতে হবে।</p></div></div>
     <div class="flow-step"><div class="flow-step-content"><strong>Subscription Activation</strong><p>Payment success হলে subscription status active হবে। User কে email notification পাঠানো হবে। Redis-এ user session cache invalidate হবে।</p></div></div>
   </div>
@@ -971,7 +971,7 @@ src/
 
   <div class="roadmap">
     <div class="roadmap-phase">
-      <h4>Phase 1 — Foundation (Week 1-2) ← তুমি এখানে আছো</h4>
+      <h4>Phase 1 — Foundation (Week 1-2) </h4>
       <ul>
         <li>✅ Auth module (Login, Register, JWT)</li>
         <li>✅ User model, Job model, Application model</li>
